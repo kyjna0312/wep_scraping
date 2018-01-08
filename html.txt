@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>[레벨1] 단순 HTML 크롤링</title>
+<style>
+#logo {
+    max-width: 100%;
+}
+</style>
+</head>
+<body>
+<h1>AskDjango VOD</h1>
+
+<h2>[레벨1] 단순 HTML 크롤링</h2>
+
+<p>본 HTML에 크롤링할 데이터가 있습니다.</p>
+
+<ul id="course_list">
+    <li class="course"><a href="https://nomade.kr/vod/setup/">개발환경 구축하기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/python/">파이썬 차근차근 시작하기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/crawling/">크롤링 차근차근 시작하기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/automation/">파이썬으로 업무 자동화</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/django/">장고 - 기본편</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/djangogirls/">장고걸스 튜토리얼</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/form/">장고 - Form/ModelForm 잘 알고 쓰기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/cbv/">장고 - 클래스 기반 뷰. 잘 알고 쓰기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/payment/">장고 - 결제 시스템 연동</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/frontend/">장고 - 웹 프론트엔드 시작편</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/widgets/">장고 - 다양한 위젯 만들기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/apiserver/">장고 - API 서버 만들기 및 초간단 안드로이드 앱 만들기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/hybrid/">장고 - 하이브리드 앱 만들기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/deploy/">장고 - 서비스 배포하기</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/django-baemin/">장고 - 실전편 (Feat. 배달의 민족 St. 만들기)</a></li>
+    <li class="course"><a href="https://nomade.kr/vod/django-instagram/">장고 - 실전편 (Feat. 인스타그램 St. 만들기)</a></li>
+</ul>
+
+<img src="https://nomade.kr/static/2017031408/nomadekr-og.jpg" id="logo" />
+
+<hr/>
+
+<h3>미션</h3>
+
+<ul>
+    <li>위 VOD 코스의 코스명과 URL을 크롤링</li>
+    <li>제약사항 : requests 라이브러리만을 사용하세요.</li>
+</ul>
+
+실행 예시
+
+<pre>
+    개발환경 구축하기 https://nomade.kr/vod/setup/
+    파이썬 차근차근 시작하기 https://nomade.kr/vod/python/
+    크롤링 차근차근 시작하기 https://nomade.kr/vod/crawling/
+    파이썬으로 업무 자동화 https://nomade.kr/vod/automation/
+    장고 - 기본편 https://nomade.kr/vod/django/
+    장고걸스 튜토리얼 https://nomade.kr/vod/djangogirls/
+    장고 - Form/ModelForm 잘 알고 쓰기 https://nomade.kr/vod/form/
+    장고 - 클래스 기반 뷰. 잘 알고 쓰기 https://nomade.kr/vod/cbv/
+    장고 - 결제 시스템 연동 https://nomade.kr/vod/payment/
+    장고 - 웹 프론트엔드 시작편 https://nomade.kr/vod/frontend/
+    장고 - 다양한 위젯 만들기 https://nomade.kr/vod/widgets/
+    장고 - API 서버 만들기 및 초간단 안드로이드 앱 만들기 https://nomade.kr/vod/apiserver/
+    장고 - 하이브리드 앱 만들기 https://nomade.kr/vod/hybrid/
+    장고 - 서비스 배포하기 https://nomade.kr/vod/deploy/
+    장고 - 실전편 (Feat. 배달의 민족 St. 만들기) https://nomade.kr/vod/django-baemin/
+    장고 - 실전편 (Feat. 인스타그램 St. 만들기) https://nomade.kr/vod/django-instagram/
+</pre>
+
+<p>AskDjango 크롤링 VOD를 통해 크롤링의 기본을 배우고, 꾸준히 크롤링을 연습해보세요.</p>
+
+<hr/>
+    <p><a href="/">home</a></p>
+    <p>
+    여러분의 파이썬/장고 페이스메이커가 되겠습니다. &dash; <a href="https://nomade.kr/vod/">AskDjango VOD</a>
+    </p>
+    <p>
+    &copy;
+    <script>document.write((new Date()).getYear() + 1900);</script>
+    SHAKEADE
+</p>
+</body>
+</html>
