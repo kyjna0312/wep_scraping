@@ -2,9 +2,8 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import re
 
-html = urlopen("http://www.pythonscraping.com/pages/page3.html")
+html = urlopen("https://en.wikipedia.org/wiki/Kevin_Bacon")
 bsObj = BeautifulSoup(html, "html.parser")
-images = bsObj.findAll("img", {"src":re.compile("\.\.\/img\/gifts/img.*\.jpg")})
-
-for images in images:
-    print(images["src"])
+for link in bsObj.findAll("a"):
+    if "href" in link.attrs:
+        print(link.attrs['href'])
