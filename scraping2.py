@@ -14,5 +14,5 @@ html = response.text
 
 soup = BeautifulSoup(html, 'html.parser')
 
-for tag in soup.select('p'):
+for tag in soup.select('li[class=course]'):
     print(tag.text)
