@@ -4,10 +4,19 @@
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+from tkinter import *
 
 html = urlopen("https://datalab.naver.com/keyword/realtimeList.naver?where=main")
 bsObj = BeautifulSoup(html, "html.parser")
 
 span = bsObj.findAll("div", {"class" : "select_date"})
-for text in span:
-    print(text.get_text())
+
+for word in span:
+    naver = word.get_text()
+
+root = Tk()
+root.title("인기 검색어")
+
+text = Label(root, text=naver).pack()
+
+root.mainloop()
