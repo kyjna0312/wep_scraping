@@ -8,6 +8,6 @@ from bs4 import BeautifulSoup
 html = urlopen("https://datalab.naver.com/keyword/realtimeList.naver?where=main")
 bsObj = BeautifulSoup(html, "html.parser")
 
-span = bsObj.findAll("div", {"class" : "keyword_rank"})
+span = bsObj.findAll("div", {"class" : "select_date"})
 for text in span:
     print(text.get_text())
